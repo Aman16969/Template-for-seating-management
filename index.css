@@ -1,5 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+  font-family: quicksand, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  font-size: 15px;
+}
   .navbar{
+    font-variant: small-caps;
     background-color: #3f4d67;
     display: block;
     color: #a9b7d0;
@@ -40,6 +50,7 @@ menu-item{
     padding: 5px;
     margin: 5px 0;
     position: relative;
+    font-size: 17px;
   }
   .inner-navbar{
     text-align: left;
@@ -114,17 +125,18 @@ menu-item{
     text-align: center;
     background-color: transparent;
     border-bottom:1px solid#007bff;
-    padding: 1px 1px;
+    padding: 0 1x 1px 1px;
     position: relative;
+    height: 35  px;
 }
 .row-card-title h2:after{
     content: "";
     background-color: #007bff;
     position: absolute;
     left:0;
-    top: 25px;
+    top: 10px;
     width: 2px;
-    height: 20px
+    height: 15px
 }
 .table{
     width: 100%;
@@ -157,10 +169,12 @@ menu-item{
     padding: 5px 1;
     border: #1dc4e9;
     background-color:#78b9ff;
+    color: #ffffff;
     
 }
 .button-group:hover{
     background-color: #60e4ff;
+    
 }
 .table-scroll{
     height: 400px !important;
@@ -180,8 +194,10 @@ menu-item{
 .form-container {
     display: block;
     place-items: center;
-    height: 100px;
+    height: 70px;
     margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
   }
 
 .modal-form{
@@ -284,7 +300,7 @@ menu-item{
     font-weight: bold;
     line-height: 1.5rem;
     padding: 4px 0;
-    background: #F42536;
+    background:#1dc4e9;
     border-radius: 5px;
     animation-duration: 300ms;
     animation-fill-mode: both;
@@ -340,4 +356,65 @@ menu-item{
   .rubberBand {
     animation-name: rubberBand;
   }
-  
+  .seat-display{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 260px !important;
+    overflow-y: scroll;
+    border-bottom: 1px solid #5C6AFF;
+  }
+  .seat-display::-webkit-scrollbar {
+      display: none;
+  }
+  .seat-book-item{
+    padding: 5px 5px 3px 5px;
+    margin: 3px 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .seat-book-item p{
+    color:#3f4d67;
+    margin-left: 20px;
+  }
+  .seat-book-item button{
+    margin-right: 10px;
+  }
+
+  /* /Logout/ */
+  .container-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3f4d67;
+}
+
+.logout-card {
+    background-color: rgb(225, 206, 206);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logout-header {
+    margin-bottom: 20px;
+}
+
+.logout-header h2 {
+    font-size: 18px;
+    color: #333;
+}
+.logout-header a{
+  text-decoration: none;
+  color: #c95405
+}
+
+.logout-body button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
