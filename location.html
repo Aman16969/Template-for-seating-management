@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <link rel="stylesheet" href="location.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <div class="navbar-header-logo">
+          <img src="" alt="" />
+          <span class="b-title">Accolite Digital</span>
+        </div>
+        <div class="navbar-content">
+          <ul class="inner-navbar">
+            <li class="nav-item menu-caption">
+              <img src="armchair.png" alt="" class="seat-header-img" />
+              <label class="seat-header" style="font-weight: 1500"
+                >Seating Management</label
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><span class="span-logo"
+                  ><i class="feather icon-sidebar"></i></span
+                ><span class="span-text">All Booking</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><span class="span-logo"></span
+                ><span class="span-text">Location</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link"
+                ><span class="span-logo"
+                  ><i class="feather icon-sidebar"></i></span
+                ><span class="span-text">Profile</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">
+                <span class="span-logo"></span
+                ><span class="span-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="container-content">
+        <div class="row-location">
+          <div class="row-card">
+            <div class="row-card-title">
+              <table>
+                <tr class="table-row">
+                  <th>Location</th>
+                  <th>Seating Capacity</th>
+                  <th>Action</th>
+                </tr>
+              </table>
+            </div>
+
+            <div class="row-card-body">
+              <div class="table-scroll">
+                <table class="table">
+                  <tbody>
+                    <tr class="table-row">
+                      <td>Bangalore</td>
+                      <td>200</td>
+                      <td class="Action">
+                        <button class="button-group">edit</button
+                        ><button class="button-group">x</button>
+                      </td>
+                    </tr>
+                    <tr class="table-row">
+                      <td>Bangalore</td>
+                      <td>200</td>
+                      <td class="Action">
+                        <button class="button-group">edit</button
+                        ><button class="button-group">x</button>
+                      </td>
+                    </tr>
+                    <tr class="table-row">
+                      <td>Bangalore</td>
+                      <td>200</td>
+                      <td class="Action">
+                        <button class="button-group">edit</button
+                        ><button class="button-group">x</button>
+                      </td>
+                    </tr>
+                    <tr class="table-row">
+                      <td>Bangalore</td>
+                      <td>200</td>
+                      <td class="Action">
+                        <button class="button-group">edit</button >
+                        <button class="button-group">x</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row-card">
+            <div class="row-card-title">
+              <h2>Add Location</h2>
+            </div> 
+            <div class="row-card-body">
+              <div class="location-cotainer">
+              
+                <form class="location-form">
+                  <div class="location-item">
+                    <label for="location">Location</label><br>
+                    <input type="text" id="location"><br><br>
+                  </div>
+                  <div class="location-item">
+                    <label for="location">Seating Capacity</label><br>
+                    <input type="text" id="seatingcapacity"><br><br>
+                  </div>
+                  <div class="location-item">
+                    <label for="location">Addresss</label><br>
+                    <input type="text" id="address"><br><br>
+                  </div>
+                  <div class="location-item">
+                    <button class="button-group" type="submit" >Get Seats</button>
+                  </div>
+
+              </form>
+           
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</dtml>
