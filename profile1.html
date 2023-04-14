@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Comic+Neue&family=Ubuntu:wght@300&display=swap');
+  </style>  
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-wrapper">
+        <div class="navbar-header-logo">
+          <img src="" alt="" />
+          <span class="b-title">Accolite Digital</span>
+        </div>
+        <div class="navbar-content">
+          <ul class="inner-navbar">
+            <li class="nav-item menu-caption">
+              <img src="armchair.png" alt="" class="seat-header-img" />
+              <label class="seat-header" style="font-weight: 1500"
+                >Seating Management</label
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><span class="span-logo"
+                  ><i class="feather icon-sidebar"></i></span
+                ><span class="span-text">All Booking</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link"
+                ><span class="span-logo"></span
+                ><span class="span-text">Location</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link"
+                ><span class="span-logo"
+                  ><i class="feather icon-sidebar"></i></span
+                ><span class="span-text">Profile</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link">
+                <span class="span-logo"></span
+                ><span class="span-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="box">
+        <div class="center"> 
+            <img src="user.png" alt="Avatar" class="avatar">
+           <h1 class="header">PROFILE</h1>
+            <br />
+            <form>
+              <label for="accid">Accolite ID:</label>
+              <input
+                type="text"
+                id="accid"
+                name="accid"
+                value="AC123"
+              /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="aman.ranjan@gmail.com" readonly/><br />
+              <label for="fname">First Name:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                value="Aman"
+                readonly
+              /><br />
+              <label for="lname">Last Name:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                value="Ranjan"
+                readonly
+              /><br />
+             <button id="edit-btn" type="button">Edit</button>
+            </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</dtml>
